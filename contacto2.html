@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       El Gran Baúl: Feria Americana
+    </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/medidas.css">
+    <link rel="icon" href="img/baul.ico">
+    
+</head>
+
+<body>
+    <header>
+        <div class="encabezado"> 
+            <img src="img/baul.png" class="img-1" alt="baul" width="5%">
+            <h2><b><u>EL GRAN BAÚL</u><br><small>"Feria Americana"</small></b></h2>
+
+            <p class="enc-2">
+                <nav>
+                    <br><br>
+                    
+                    <a href="index.html">Inicio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <a href="">Contacto</a>
+                </nav>
+            </p>
+        </div>
+    
+    </header>
+
+    <main> 
+        <h2>Formulario de Contacto</h2>
+        <form action="" class="formulario" id="formulario">
+            <fieldset>
+                <legend><b>Datos Personales</b></legend>
+                <div class="formulario__grupo" id="grupo__Nombre">
+                    <label for="Nombre" class="formulario__label">Nombre: </label>
+                    <div>
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+        
+
+                <div class="formulario__grupo" id="grupo__Apellido">
+                    <label for="Apellido" class="formulario__label">Apellido: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Perez">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="Email" class="formulario__label">Email: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="email" id="email" placeholder="ejemplo@gmail.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__Provincia">
+                    <label for="Provincia" class="formulario__label">Provincia: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="provincia" id="provincia" placeholder="Misiones">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__Localidad">
+                    <label for="Localidad" class="formulario__label">Localidad: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="localidad" id="localidad" placeholder="Obera">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+                
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><b>Seleccion de Estilos: </b></legend>
+                <div>
+                    <label for="temporada">Seleccione una temporada: </label>
+                    <select name="temporada" id="temporada">
+                        <option value=""></option>
+                        <option value="1">Primavera</option>
+                        <option value="2">Verano</option>
+                        <option value="3">Otoño</option>
+                        <option value="4">Invierno</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <label for="temporada">Seleccione una prenda: </label>
+                    <select name="temporada" id="temporada">
+                        <option value=""></option>
+                        <option value="1">Pantalon</option>
+                        <option value="2">Remera</option>
+                        <option value="3">Camisa</option>
+                        <option value="4">Chomba</option>
+                        <option value="5">Campera</option>
+                        
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <label for="talle">Talle: </label>
+                    <input type="talle" placeholder="Ingrese el talle">
+                </div>
+                <br>
+
+                <br>
+                <div>
+                    <label for="color">Seleccione el color: </label>
+                    <label for="curso">Rojo</label>
+                    <input type="radio" name="interes" id="1">
+                    <label for="curso">Azul</label>
+                    <input type="radio" name="interes" id="2">
+                    <label for="curso">Negro</label>
+                    <input type="radio" name="interes" id="3">
+                    <label for="curso">Blanco</label>
+                    <input type="radio" name="interes" id="4">
+                    <label for="curso">Amarillo</label>
+                    <input type="radio" name="interes" id="4">
+                </div>
+                <br>
+
+                <br>
+                <div>
+                    <label for="foto">Adjuntar modelo: </label>
+                    <input type="file">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+            
+			<button type="reset" class="formulario__btn">Borrar</button>
+
+        </form>
+
+        
+    </main>
+
+    <script src="contacto2.js"></script>
+
+    <footer class="boton">
+        <p align="right">
+            <booton><a href="#">↑</a></booton>
+        </p>
+    </footer>
+</body>
+</html>
